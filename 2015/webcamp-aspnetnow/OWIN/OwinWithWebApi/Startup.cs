@@ -8,13 +8,15 @@ using System.Web.Http;
 using Microsoft.Owin;
 using Owin;
 
+
+[assembly: OwinStartup(typeof(OwinWithWebApi.Startup))]
 namespace OwinWithWebApi
 {
     /// <summary>
     /// /Home => Invokes WebApi
     /// /... => Hello World
     /// </summary>
-    [assembly: OwinStartup(typeof(OwinWithWebApi.Startup))]
+    //[assembly: OwinStartup(typeof(OwinWithWebApi.Startup))]
     public class Startup
     {
         public void Configuration(IAppBuilder app)

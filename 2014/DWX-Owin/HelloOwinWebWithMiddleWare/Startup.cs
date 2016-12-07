@@ -7,9 +7,10 @@ using System.Web;
 using Microsoft.Owin;
 using Owin;
 
+[assembly: OwinStartup(typeof(HelloOwinWebWithMiddleWare.Startup))]
 namespace HelloOwinWebWithMiddleWare
 {
-    [assembly: OwinStartup(typeof(HelloOwinWebWithMiddleWare.Startup))]
+    
     public class Startup
     {
         public void Configuration(IAppBuilder app)

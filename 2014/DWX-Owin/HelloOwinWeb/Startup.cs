@@ -5,9 +5,10 @@ using System.Web;
 using Microsoft.Owin;
 using Owin;
 
+[assembly: OwinStartup(typeof(HelloOwinWeb.Startup))]
 namespace HelloOwinWeb
 {
-    [assembly: OwinStartup(typeof(HelloOwinWeb.Startup))]
+    
     public class Startup
     {
         public void Configuration(IAppBuilder app)

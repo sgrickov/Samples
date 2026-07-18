@@ -15,6 +15,12 @@ public class SolicitorListingEntity
     public string? EmailFormUrl { get; set; }
     public string? Description { get; set; }
     public bool IsBasicListing { get; set; }
+
+    /// <summary>
+    /// Set by SearchOrchestrator (Core project) by diffing this run's ProfileUrl set against the
+    /// immediately preceding run for the same location. Flows unchanged through ReportBuilder into
+    /// SolicitorListingView, serialized as camelCase JSON, and rendered by the frontend's NewBadge component.
+    /// </summary>
     public bool IsNewSinceLastRun { get; set; }
 
     public SearchRunLocationEntity? SearchRunLocation { get; set; }

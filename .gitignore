@@ -1,0 +1,23 @@
+# .NET
+backend/**/bin/
+backend/**/obj/
+*.user
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vs/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Private/internal notes — not part of the submission
+/CLAUDE.md
+/InfoTrack Development Task Waterloo RH v1.4.txt
